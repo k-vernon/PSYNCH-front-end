@@ -37,12 +37,14 @@ const Landing = ({ user }) => {
           <p className="subtitle-main">Choose an emotion below to find your stats.</p>
         </div>
         
-        <div className="main-moods">
-          <div><i class="fa-solid fa-face-smile-beam fa-4x"></i></div>
-          <div><i class="fa-solid fa-face-sad-tear fa-4x"></i></div>
-          <div><i class="fa-solid fa-face-angry fa-4x"></i></div>
-          <div><i class="fa-solid fa-face-frown-open fa-4x"></i></div>
-        </div>
+        <Link to="posts/new/" style={linkStyle}>
+          <div className="main-moods">
+            <div><i class="fa-solid fa-face-smile-beam fa-4x"></i></div>
+            <div><i class="fa-solid fa-face-sad-tear fa-4x"></i></div>
+            <div><i class="fa-solid fa-face-angry fa-4x"></i></div>
+            <div><i class="fa-solid fa-face-frown-open fa-4x"></i></div>
+          </div>
+        </Link>
       </section>
     </main>
   );
